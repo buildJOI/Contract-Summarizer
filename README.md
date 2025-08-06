@@ -1,2 +1,45 @@
-# Contract-Summarizer
-An AI-powered platform for intelligent contract analysis. Securely upload .docx and .pdf files to receive automated summaries, extract critical clauses, and identify key terms. This tool accelerates legal review, reduces costs, and mitigates risk by ensuring no important point is compromised.
+# Contract Summarizer 📜✍️
+
+[![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+
+A powerful Python tool to automatically summarize legal contracts, extracting key points and reducing lengthy documents into concise, readable summaries.
+
+## 🌟 Overview
+
+Reading through dense legal contracts is a time-consuming and often confusing task. This **Contract Summarizer** leverages Natural Language Processing (NLP) to parse complex legal documents (`.pdf`, `.docx`, `.txt`) and generate a short, coherent summary. It's designed to help lawyers, paralegals, and business professionals quickly grasp the essential terms and clauses of a contract without needing to read it cover to cover.
+
+This tool uses an **extractive summarization** approach, identifying and pulling out the most important sentences from the source text to form a summary.
+
+## ✨ Key Features
+
+-   **Multi-Format Support:** Process contracts in various formats, including `.pdf`, `.docx`, and `.txt`.
+-   **Extractive Summarization:** Intelligently identifies and extracts the most critical sentences to create a factual summary.
+-   **Key Term Identification:** Automatically pulls out important keywords and phrases (e.g., "Governing Law," "Termination Clause," "Confidentiality").
+-   **Customizable Summary Length:** Easily adjust the length of the summary (e.g., 20% of the original text).
+-   **Purely Command-Line:** A lightweight, fast, and easy-to-use tool that runs directly in your terminal.
+
+## 📸 Demo
+
+Here is an example of how the script processes a document and outputs a summary.
+
+**Input:** `legal_contract.pdf` (10 pages, 2500 words)
+**Output:** `summary_legal_contract.txt` (1 page, 500 words)
+
+```bash
+# Example of running the script
+$ python summarize.py contracts/long_nda.pdf --length 20
+
+Processing 'contracts/long_nda.pdf'...
+Original word count: 2500
+Summary word count: 498
+
+Summary saved to: summaries/summary_long_nda.txt
+
+--- Key Terms Found ---
+- Confidential Information
+- Term and Termination
+- Governing Law
+- Non-Disclosure
+- Return of Information
