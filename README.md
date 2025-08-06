@@ -1,4 +1,4 @@
-# Contract Summarizer 📜✍️
+# Contract Summarizer 
 
 [![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
@@ -6,13 +6,13 @@
 
 A powerful Python tool to automatically summarize legal contracts, extracting key points and reducing lengthy documents into concise, readable summaries.
 
-## 🌟 Overview
+## Overview
 
 Reading through dense legal contracts is a time-consuming and often confusing task. This **Contract Summarizer** leverages Natural Language Processing (NLP) to parse complex legal documents (`.pdf`, `.docx`, `.txt`) and generate a short, coherent summary. It's designed to help lawyers, paralegals, and business professionals quickly grasp the essential terms and clauses of a contract without needing to read it cover to cover.
 
 This tool uses an **extractive summarization** approach, identifying and pulling out the most important sentences from the source text to form a summary.
 
-## ✨ Key Features
+## Key Features
 
 -   **Multi-Format Support:** Process contracts in various formats, including `.pdf`, `.docx`, and `.txt`.
 -   **Extractive Summarization:** Intelligently identifies and extracts the most critical sentences to create a factual summary.
@@ -20,7 +20,7 @@ This tool uses an **extractive summarization** approach, identifying and pulling
 -   **Customizable Summary Length:** Easily adjust the length of the summary (e.g., 20% of the original text).
 -   **Purely Command-Line:** A lightweight, fast, and easy-to-use tool that runs directly in your terminal.
 
-## 📸 Demo
+## Demo
 
 Here is an example of how the script processes a document and outputs a summary.
 
